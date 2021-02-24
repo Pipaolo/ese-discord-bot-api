@@ -10,7 +10,7 @@ router.post("/youtube", async (ctx, _) => {
   const body = ctx.request.body
   // get the url
   const url = body.videoURL
-  const videoInfo = await ytdl.getBasicInfo(url);
+  const videoInfo = await ytdl.getInfo(url);
 
   ctx.body = videoInfo
 });
