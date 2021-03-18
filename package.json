@@ -1,23 +1,48 @@
 {
-  "name": "ese-discord-bot-api",
-  "version": "0.0.0",
+  "name": "chatbox-api",
+  "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=dev nodemon --exec babel-node ./src/app.js"
   },
   "dependencies": {
+    "@hapi/boom": "^9.1.2",
+    "@koa/cors": "^3.1.0",
     "@koa/router": "^10.0.0",
+    "@types/mongoose": "^5.10.3",
+    "bcryptjs": "^2.4.3",
     "co": "^4.6.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "express": "~4.16.1",
+    "dotenv": "^8.2.0",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+    "jsonwebtoken": "^8.5.1",
     "koa": "^2.13.1",
+    "koa-404-handler": "^0.0.2",
+    "koa-better-error-handler": "^7.0.0",
     "koa-bodyparser": "^4.3.0",
+    "koa-jwt": "^4.0.0",
     "koa-logger": "^3.2.1",
+    "koa-passport": "^4.1.4",
+    "koa-session": "^6.1.0",
+    "koa-socket-2": "^2.0.0",
+    "mongoose": "^5.12.0",
     "morgan": "~1.9.1",
-    "youtube-search-api": "^1.0.10",
-    "ytdl-core-discord": "^1.2.5"
+    "passport-local": "^1.0.0",
+    "socket.io": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/plugin-proposal-export-default-from": "^7.12.13",
+    "@babel/preset-env": "^7.13.10",
+    "eslint": "^7.22.0",
+    "eslint-plugin-import": "^2.22.1",
+    "koa-webpack": "^6.0.0",
+    "nodemon": "^2.0.7"
   }
 }

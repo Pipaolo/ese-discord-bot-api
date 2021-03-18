@@ -1,0 +1,151 @@
+{
+    "env": {
+        "node": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 11
+    },
+    "rules": {
+        "callback-return": [
+            "error",
+            [
+                "done",
+                "proceed",
+                "next",
+                "onwards",
+                "callback",
+                "cb"
+            ]
+        ],
+        "camelcase": [
+            "warn",
+            {
+                "properties": "always"
+            }
+        ],
+        "comma-style": [
+            "warn",
+            "last"
+        ],
+        "curly": [
+            "error"
+        ],
+        "eqeqeq": [
+            "error",
+            "always"
+        ],
+        "eol-last": [
+            "warn"
+        ],
+        "handle-callback-err": [
+            "error"
+        ],
+        "no-dupe-keys": [
+            "error"
+        ],
+        "no-duplicate-case": [
+            "error"
+        ],
+        "no-extra-semi": [
+            "warn"
+        ],
+        "no-labels": [
+            "error"
+        ],
+        "no-mixed-spaces-and-tabs": [
+            2,
+            "smart-tabs"
+        ],
+        "no-redeclare": [
+            "warn"
+        ],
+        "no-return-assign": [
+            "error",
+            "always"
+        ],
+        "no-sequences": [
+            "error"
+        ],
+        "no-trailing-spaces": [
+            "warn"
+        ],
+        "no-undef": [
+            "off"
+        ],
+        "no-unexpected-multiline": [
+            "warn"
+        ],
+        "no-unreachable": [
+            "warn"
+        ],
+        "no-unused-vars": [
+            "warn",
+            {
+                "caughtErrors": "all",
+                "caughtErrorsIgnorePattern": "^unused($|[A-Z].*$)",
+                "argsIgnorePattern": "^unused($|[A-Z].*$)",
+                "varsIgnorePattern": "^unused($|[A-Z].*$)"
+            }
+        ],
+        "no-use-before-define": [
+            "error",
+            {
+                "functions": false
+            }
+        ],
+        "one-var": [
+            "warn",
+            "never"
+        ],
+        "prefer-arrow-callback": [
+            "warn",
+            {
+                "allowNamedFunctions": true
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "semi-spacing": [
+            "warn",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "semi-style": [
+            "warn",
+            "last"
+        ],
+        "newline-per-chained-call": [
+            "warn"
+        ],
+        "padded-blocks": [
+            "warn",
+            "never"
+        ],
+        "space-in-parens": [
+            "warn",
+            "never"
+        ],
+        "object-curly-spacing": [
+            "warn",
+            "always"
+        ],
+        "max-len": [
+            "warn",
+            {
+                "code": 100
+            }
+        ],
+        "no-new-wrappers": [
+            "warn"
+        ],
+        "radix": [
+            "warn",
+            "always"
+        ]
+    }
+}
